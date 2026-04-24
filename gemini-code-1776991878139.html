@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OG Cartoon Network <3 | Official Hub</title>
+    <style>
+        :root {
+            --bg-dark: #0b132b;
+            --bg-card: #1c2541;
+            --neon-blue: #4eb1ff;
+            --accent-blue: #3a7cd6;
+            --text-main: #ffffff;
+            --text-dim: #a0b2d8;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* --- Navigation --- */
+        nav {
+            background: rgba(11, 19, 43, 0.95);
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 80%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--bg-card);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--neon-blue);
+            text-shadow: 0 0 10px var(--accent-blue);
+        }
+
+        .nav-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--neon-blue);
+        }
+
+        /* --- Hero Section --- */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle, #1c2541 0%, #0b132b 100%);
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--text-dim);
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        /* --- Sections --- */
+        section {
+            padding: 100px 15%;
+            min-height: 60vh;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .card {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid var(--accent-blue);
+            box-shadow: 0 0 20px rgba(58, 124, 214, 0.2);
+        }
+
+        h2 {
+            color: var(--neon-blue);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* --- Join Button --- */
+        .cta-btn {
+            background: var(--accent-blue);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 0 15px var(--accent-blue);
+            transition: 0.3s;
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+            background: var(--neon-blue);
+            box-shadow: 0 0 25px var(--neon-blue);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--bg-card);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">OG CN <3</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#join">Join Us</a>
+        </div>
+    </nav>
+
+    <header id="home">
+        <h1>Nostalgia Never Sleeps</h1>
+        <p>The ultimate hub for classic animation fans. Relive the golden era of Cartoon Network and Adult Swim in a chill, 18+ community.</p>
+        <a href="#join" class="cta-btn">Enter the Hub</a>
+    </header>
+
+    <section id="about">
+        <div class="about-grid">
+            <div>
+                <h2>The Community</h2>
+                <p>We are dedicated to preserving the vibes of the 90s and early 2000s. From weekly watch parties to retro gaming nights, our server is a sanctuary for those who remember the good old days of Saturday morning cartoons.</p>
+            </div>
+            <div class="card">
+                <h3>Server Perks</h3>
+                <ul>
+                    <li>18+ Stoner-Friendly Space</li>
+                    <li>Custom "Cartoon Botwork" Features</li>
+                    <li>Exclusive Watch Party Streams</li>
+                    <li>Nostalgia-Fueled Discussions</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="join" style="text-align: center;">
+        <h2>Ready to Tune In?</h2>
+        <p style="margin-bottom: 40px;">Grab your favorite snacks and join thousands of other fans in the official Discord.</p>
+        <div style="margin: auto; max-width: 400px;">
+            <a href="https://discord.gg/BpunqM7CbT" target="_blank" class="cta-btn">JOIN VIA DISCORD</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 OG Cartoon Network <3 Community. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
